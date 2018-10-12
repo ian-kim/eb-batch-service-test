@@ -14,11 +14,11 @@ Elastic Beanstalk은 크게 보아 어플리케이션(Application)과 환경(Env
 
 
 ## Table List
-1. [EB CLI 설치](./docs/ebcli-install.md)
-2. [EB CLI와 Git 사용](./docs/ebcli-git.md)
-3. [Elastic Beanstalk 사용법](./docs/ebcli-deploy.md)
-4. [환경 변수 관리법](./docs/ebcli-environment-variable.md)
-<br />
+- [EB CLI 설치](./docs/ebcli-install.md)
+- [EB CLI와 Git 사용](./docs/ebcli-git.md)
+- [Elastic Beanstalk 사용법](./docs/ebcli-deploy.md)
+- [환경 변수 관리법](./docs/ebcli-environment-variable.md)
+__
 
 
 ## Link
