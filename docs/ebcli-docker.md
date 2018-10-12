@@ -1,13 +1,13 @@
 # Docker & Elastic Beanstalk
 
-### 단일 컨테이너 Docker
+- 단일 컨테이너 Docker
 인스턴스 하나에 하나의 컨테이너 사용
 
-### 멀티컨테이너 Docker
+- 멀티컨테이너 Docker
 ECS를 사용하여 EB 환경에서 여러 컨테이너가 배포 됩니다.
 
 
-### 사용 순서
+## 사용 순서
 ```
 git clone https://github.com/awslabs/eb-py-flask-signup.git
 cd eb-py-flask-signup
@@ -21,10 +21,10 @@ eb create dev-env
 eb open
 ```
 
-### 단일 컨테이너 구성
+## 단일 컨테이너 구성
 Dockerfile 사용자 이미지와 기존 이미지를 지정하는  Dockerrun.aws.json 파일 둘다가 포함되어 있어야 한다.
 
-#### Dockerrun.aws.json
+### Dockerrun.aws.json
 Docker 컨테이너를 Elastic Beanstalk 애플리케이션으로 배포하는 방법을 설명
 - 이미지
 ```
@@ -43,7 +43,7 @@ Elastic Beanstalk 환경의 각 인스턴스는 해당 이미지에서 docker pu
 - 인증
 - 버전(AWSEBDockerrunVersion)(default 1)
 
-#### Dockerrun.aws.json 예제
+### Dockerrun.aws.json 예제
 ```
 {
   "AWSEBDockerrunVersion": "1",
@@ -66,7 +66,7 @@ Elastic Beanstalk 환경의 각 인스턴스는 해당 이미지에서 docker pu
 }
 ```
 
-#### Dockerfile 예제
+### Dockerfile 예제
 ```
 FROM ubuntu:12.04
 
@@ -81,7 +81,8 @@ EXPOSE 80
 
 CMD ["/usr/sbin/nginx", "-c", "/etc/nginx/nginx.conf"]
 ```
-#### 로컬테스트
+
+### 로컬테스트
 ```
 $ eb local run
 Creating elasticbeanstalk_phpapp_1...
