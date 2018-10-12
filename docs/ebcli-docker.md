@@ -81,9 +81,17 @@ EXPOSE 80
 
 CMD ["/usr/sbin/nginx", "-c", "/etc/nginx/nginx.conf"]
 ```
-
-
+#### 로컬테스트
+```
+$ eb local run
+Creating elasticbeanstalk_phpapp_1...
+Creating elasticbeanstalk_nginxproxy_1...
+Attaching to elasticbeanstalk_phpapp_1, elasticbeanstalk_nginxproxy_1
+phpapp_1     | [23-Apr-2015 23:24:25] NOTICE: fpm is running, pid 1
+phpapp_1     | [23-Apr-2015 23:24:25] NOTICE: ready to handle connections
+```
 
 # Link
 - [py flask signup github](https://github.com/aws-samples/eb-py-flask-signup/tree/docker)
 - [단일 컨테이너 Docker 구성](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create_deploy_docker_image.html)
+- [로컬 테스트](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create_deploy_docker-eblocal.html)
