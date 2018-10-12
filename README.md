@@ -1,4 +1,4 @@
-![elastic beanstalk image](https://i2.wp.com/www.awsomeblog.com/wp-content/uploads/2015/07/elastic_beanstalk.png?zoom=2&fit=256%2C256)
+![elastic beanstalk image](https://i2.wp.com/www.awsomeblog.com/wp-content/uploads/2015/07/elastic_beanstalk.png?zoom=2&fit=256%2C256 =110x100)
 
 
 # Elastic Beanstalk :shipit:
