@@ -16,7 +16,6 @@ Elastic Beanstalk은 크게 보아 어플리케이션(Application)과 환경(Env
 - [사전 준비 작업](./docs/pre-requisite.md)
 - [EB CLI 구성 및 GIT](./docs/ebcli-git.md)
 - [환경구성 및 배포](./docs/ebcli-deploy.md)
-- [환경 변수 관리법](./docs/ebcli-environment-variable.md)
 - [Docker로 배포하기](./docs/ebcli-docker.md)
 - [RBS 연결 Nodejs예제](./docs/ebcli-rds-connection-test-example.md)
 
