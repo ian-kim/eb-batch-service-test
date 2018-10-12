@@ -1,12 +1,13 @@
 # 환경 구성 및 배포
 
 
-## eb create(환경구성)
+### 환경생성
+프로젝트 디렉토리 내에 소스코드가 있는 경우 이를 번들링하여 환경에 배포하고 그렇지 않으면 샘플 애플리케이션을 사용함.
 ```
 $ eb create my-env
 ```
 
-## eb status(상태확인)
+### 상태확인
 ```
 $ eb status eb-test-dev
 
@@ -23,13 +24,25 @@ Environment details for: eb-test-dev
   Health: Green
 ```
 
-## eb open(브라우저열기)
+### 배포
+```
+$ eb deploy eb-test-dev
+Creating application version archive "app-987b-181013_012600".
+Uploading eb-test/app-987b-181013_012600.zip to S3. This may take a while.
+Upload Complete.
+2018-10-12 16:26:01    INFO    Environment update is starting.
+2018-10-12 16:26:05    INFO    Deploying new version to instance(s).
+2018-10-12 16:26:31    INFO    New application version was deployed to running EC2 instances.
+2018-10-12 16:26:31    INFO    Environment update completed successfully.
+```
+
+### 브라우저열기
 ```
 $ eb open eb-test-dev
 ```
 
 
-## eb health 확인
+### 헬스 체크
 ```
 $ eb health eb-test-dev
  
