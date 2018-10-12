@@ -1,18 +1,6 @@
 # Elastic Beanstalk 
-아래의 그림과 같이 Elastic Beanstalk은 크게 보아 어플리케이션(Application)과 환경(Environment)으로 구성된다. 어플리케이션은 버저닝된 형태로 관리되며, LB와 SG와 같은 환경들이 생성 배포 유지 관리가능한 Tier의 형태를 이루고 있다. 다시말해 Devops의 모든 요소를 가지고 있다고 볼 수 있다.
+Elastic Beanstalk은 크게 보아 어플리케이션(Application)과 환경(Environment)으로 구성된다. 어플리케이션은 버저닝된 형태로 관리되며, LB와 SG와 같은 환경들이 생성 배포 유지 관리가능한 Tier의 형태를 이루고 있다. 다시말해 Devops의 모든 요소를 가지고 있다고 볼 수 있다.
 
-===============================
-        Application
-===============================
-        EC2 Instance
--------------------------------
-       Security Group
--------------------------------
-      Auto Scaling Group
--------------------------------
-        Load Balancer
-===============================
-         [Figure 1]
 
 ## Elastic Beanstalk Terminology(용어)
 - Application: elastic beanstalk 논리적인 컴포넌트 집합을 말한다. 다시 말해 환경, 버전, 설정들을 포함함.
