@@ -13,9 +13,10 @@ Elastic Beanstalk은 크게 보아 어플리케이션(Application)과 환경(Env
 <br />
 
 ## Overview(간략한 구성)
+```
 Application : Environment = 1 : M
 Environment : Profile = 1 : 1
-
+```
 
 ## Table
 - [사전 준비 작업](./docs/pre-requisite.md)
